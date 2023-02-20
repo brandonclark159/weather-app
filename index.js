@@ -41,22 +41,27 @@ search.addEventListener('click', () => {
         switch (json.weather[0].main) {
             case 'Clear':
                 image.src = 'images/clear.png';
+                document.body.style.backgroundColor = '#AFDCEB';
                 break;
 
             case 'Rain':
                 image.src = 'images/rain.png';
+                document.body.style.backgroundColor = '#86C5D8';
                 break;
 
             case 'Snow':
                 image.src = 'images/snow.png';
+                document.body.style.backgroundColor = '#FFFFFF';
                 break;
 
             case 'Clouds':
                 image.src = 'images/cloud.png';
+                document.body.style.backgroundColor = '#4D6469';
                 break;
 
             case 'Mist':
                 image.src = 'images/mist.png';
+                document.body.style.backgroundColor = '#F0F8FF';
                 break;
 
             default:
